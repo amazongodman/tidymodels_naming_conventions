@@ -2,6 +2,28 @@
 # Suggestion for object(variable) naming conventions for tidymodels.
 
 
+table ver. 2021-12-18
+
+|names[suggestion]|objects|
+|---|---|
+|ames|data(ames)|
+|ames_split|initial_split()|
+|ames_train|training()|
+|ames_test|testing()|
+|ames_cv|mc_cv() <br> vfold_cv() <br> bootstraps() <br> validation_split()|
+|ames_rec|recipes objects <br> finalize_recipe()|
+|ames_spec|parsnip models <br> finalize_model()|
+|ames_wflow|workflows objects <br> finalize_workflow() <br> update()|
+|ames_fit|fit() <br> fit_members()|
+|ames_cv_res|fit_resample()|
+|ames_grid|grid_*() <br> crossing()|
+|ames_tune_res|tune_*()|
+|ames_last_res|last_fit()|
+|*_param|select_best() <br> parameters()|
+|*_perf|yardstick result <br> collect_metrics() <br> rank_results()|
+|Don't create|control_*() <br> prep() <br> bake() <br> metric_set()|
+
+
 
 
 

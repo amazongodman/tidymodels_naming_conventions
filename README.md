@@ -1,8 +1,7 @@
 
-# Suggestion for object(variable) naming conventions for tidymodels.
+# [my Suggestion] object(variable) naming conventions for tidymodels.
 
-
-table ver. 2021-12-18
+ver. 2021-12-18
 
 |names[suggestion]|objects|
 |---|---|
@@ -23,7 +22,7 @@ table ver. 2021-12-18
 |*_perf|yardstick result <br> collect_metrics() <br> rank_results()|
 |Don't create|control_*() <br> prep() <br> bake() <br> metric_set()|
 
-
+Please let me know if you have any suggestions for improvement.
 
 
 
@@ -31,13 +30,12 @@ table ver. 2021-12-18
 
 # Object naming conventions in R
 
-
-There is sometimes debate about object naming conventions in programming languages.
+Sometimes debate about object naming conventions.
 
 https://en.wikipedia.org/wiki/Naming_convention_(programming)
 
-You may think that it is more fun to give your child a name you like.
-To be honest, I too find it a hassle to be forced to follow a naming convention and give a name.
+You're more comfortable with free writing, right?
+To be honest, I am always tired of following the rules.
 But the naming convention still exists.
 The reasons for this are to reduce the stress of writing code and to make it easier to understand when re-reading it later.
 If the name of the object does not correspond to its content, you will have to re-read all the code to understand the relationship between the object and its content.
@@ -64,8 +62,6 @@ Some of the rules are
 
 and so on.
 
-
-
 Also, different style guides may have different recommended rules.
 
 
@@ -77,15 +73,12 @@ Although not listed here, some old R users may have followed the rule of using t
 
 [What is the meaning of the "." (dot) in R?](https://stats.stackexchange.com/questions/10712/what-is-the-meaning-of-the-dot-in-r)
 
-
 And it is mentioned in the style guide that "**it is very difficult to follow the rule**".
-
 
 > Generally, variable names should be nouns and function names should be verbs. Strive for names that are concise and meaningful (this is not easy!).
 -- The tidyverse style guide [2.1 Object names]
 
 # Rules(principles) for tidymodels
-
 
 tidymodels and tidyverse, is a package led by Rstudio.
 The members working on it are all familiar with the tidyverse and R rules.
@@ -94,19 +87,13 @@ The following [Tidy Modeling with R: a.k.a. TMwR](https://www.tmwr.org/) also co
 
 https://www.tmwr.org/tidyverse.html#principles
 
-However, when you read the code in TMWR, you may find that the objects are named differently even though their contents are the same.
-
+However, when you read the code in TMwR, you may find that the objects are named differently even though their contents are the same.
 Therefore, I would like to organize the relationship between names and contents in TMwR and suggest naming conventions to help you when you feel like writing tidy code.
-
 
 # object name and contents table
 
-
-The names of the objects were written in a clear way using suffixes.
 I mainly checked this by looking at TMWR, but I also referred to blogs of people who wrote tidymodels code.
 The names were given in the following relationships.
-
-
 
 |names|objects||names|objects|
 |---|---|---|---|---|
@@ -134,13 +121,10 @@ I've been reading some tidymodels code that some people have written, and I've b
 
 I think these are the reasons why named objects are so complicated.
 
-
-
 So I'll try to simplify them by dividing them into certain groups.
 In order to make the following table easier to understand, I will assume that you are using data ames.
 
-
-
+ver. 2021-12-18
 
 |names[suggestion]|objects|
 |---|---|

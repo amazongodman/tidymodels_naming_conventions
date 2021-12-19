@@ -1,5 +1,5 @@
 
-# [my Suggestion] object(variable) naming conventions for tidymodels.
+# object(variable) naming conventions for tidymodels.[my Suggestion] 
 
 ver. 2021-12-18
 
